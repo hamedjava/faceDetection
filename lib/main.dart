@@ -1,5 +1,5 @@
 import 'package:face_detection/custom_card.dart';
-import 'package:face_detection/face_detector.dart';
+import 'package:face_detection/object_detector/object_detector.dart';
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 
@@ -44,11 +44,11 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Text(widget.title),
         ),
-        body: Center(
+        body: const Center(
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-              CustomCard('Face Detection', FaceDetectorView()),
+              CustomCard('Object Detection', ObjectDetectorView())
             ])));
   }
 }
